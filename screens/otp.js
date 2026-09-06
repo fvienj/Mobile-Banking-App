@@ -4,7 +4,6 @@ import {
   View, 
   TextInput, 
   TouchableOpacity, 
-  ImageBackground,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
@@ -22,9 +21,7 @@ export default function OTP({navigation}) {
   }
 
   return (
-    <GradientBackground colors={['black', 'teal']}>
-      style={styles.container}
-    
+    <GradientBackground colors={['black', 'teal']} style={styles.container}>
       <KeyboardAvoidingView 
         behavior="padding" 
         keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 25} 
